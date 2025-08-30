@@ -32,6 +32,23 @@ function App() {
     return () => window.removeEventListener("paramsChanged", handleParamsChanged);
   }, []);
 
+  async function handleFetch() {
+    try {
+      setLoading(true);
+      setError(null);
+      // API call
+    } catch (err) {
+      setError("Something went wrong");
+      console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  setTimeout(()=>{
+    handleFetch()
+  }, 500)
+
   return (
     <div 
       className="w-screen min-md:h-screen overflow-x-hidden flex max-md:flex-col" 
