@@ -75,6 +75,23 @@ const ModelSelector: React.FC = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
+  async function handleFetch() {
+    try {
+      setLoading(true);
+      setError(null);
+      // API call
+    } catch (err) {
+      setError("Something went wrong");
+      console.log(err)
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  setTimeout(()=>{
+    handleFetch()
+  }, 500)
+
   return (
     <div className="relative inline-block w-36">
       {/* Dropdown Button */}
