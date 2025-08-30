@@ -20,7 +20,7 @@ I reviewed several existing AI UIs to identify their strengths:
 - **Microsoft Copilot Lab**  
   Strong integration with productivity apps (Word, Excel). The standout feature is task-based suggestions directly linked to workflows.
 
-### Features Chosen (4–6 combined into this design)
+### Features Chosen (6 combined into this design)
 1. **Parameter Controls** (from OpenAI Playground).  
 2. **Quick Prompt Templates** (inspired by Hugging Face Spaces).  
 3. **Clean Minimalist Chat Focus** (from Anthropic Claude).  
@@ -32,7 +32,7 @@ I reviewed several existing AI UIs to identify their strengths:
 
 ## 2. Design
 
-### a. Mockup (Figma / Adobe XD)
+### a. Mockup (Figma)  [View Design](https://www.figma.com/design/kr7OQZXmGBARPfPRDSJU8a/AI-UI-Mockup?node-id=0-1&t=MPmoM2Gj8LUj6QW2-1)
 A mockup was created in **Figma** to outline:
 - Left side: Chat interface (conversation flow).
 - Right side: Sidebar with theme toggle, parameters, and templates.
@@ -76,7 +76,9 @@ A mockup was created in **Figma** to outline:
 
 ---
 
-## 5. Next Steps
-- Integrate backend model API.  
-- Expand prompt templates for real-world use cases.  
-- Add conversation history persistence.  
+## 5. Screenshots
+
+<p align="center">
+  <img src="./src/assets/SS 1.png" alt="1" width="44%" />
+  <img src="./src/assets/SS 2.png" alt="2" width="44%" />
+</p>

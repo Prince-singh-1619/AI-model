@@ -73,7 +73,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ params }) => {
             transition={{ duration: 0.3 }}
             className={`max-w-lg rounded-2xl shadow-sm ${
               msg.role === "user"
-                ? "bg-slate-600 text-white self-end ml-auto"
+                ? "bg-slate-600 self-end ml-auto"
                 : "bg-slate-100 dark:bg-slate-700 self-start"
             }`}
           >
@@ -87,7 +87,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ params }) => {
         ))}
 
         {/* Typing Indicator */}
-        {isTyping && (
+        {/* {isTyping && ( */}
           <div className="flex items-center space-x-2 self-start bg-slate-100 dark:bg-slate-700 px-3 py-2 rounded-2xl w-fit">
             <span className="text-sm text-gray-500">Assistant is typing</span>
             <span className="flex space-x-1">
@@ -96,7 +96,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ params }) => {
               <span className="w-2 h-2 bg-gray-500 rounded-full animate-bounce [animation-delay:300ms]"></span>
             </span>
           </div>
-        )}
+        {/* )} */}
 
         <div ref={chatEndRef} />
       </div>

@@ -54,7 +54,7 @@ const OutputMessage: React.FC<OutputMessageProps> = ({ id, text, params }) => {
       aria-label="AI output message"
     >
       {/* Message content */}
-      <p className="whitespace-pre-wrap text-left mb-2">{text}</p>
+      <p className="whitespace-pre-wrap text-left mb-2 ">{text}</p>
 
       {/* Parameters used */}
       {params && (
