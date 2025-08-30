@@ -87,7 +87,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ params }) => {
         ))}
 
         {/* Typing Indicator */}
-        {/* {isTyping && ( */}
+        {isTyping && (
           <div className="flex items-center space-x-2 self-start bg-slate-100 dark:bg-slate-700 px-3 py-2 rounded-2xl w-fit">
             <span className="text-sm text-gray-500">Assistant is typing</span>
             <span className="flex space-x-1">
@@ -96,7 +96,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ params }) => {
               <span className="w-2 h-2 bg-gray-500 rounded-full animate-bounce [animation-delay:300ms]"></span>
             </span>
           </div>
-        {/* )} */}
+        )}
 
         <div ref={chatEndRef} />
       </div>
