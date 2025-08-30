@@ -78,7 +78,5 @@ A mockup was created in **Figma** to outline:
 
 ## 5. Screenshots
 
-<p align="center">
-  <img src="./src/assets/SS 1.png" alt="1" width="44%" />
-  <img src="./src/assets/SS 2.png" alt="2" width="44%" />
-</p>
+  <img src="./src/assets/SS 1.png" alt="1" width="90%" align="center" />
+  <img src="./src/assets/SS 2.png" alt="2" width="90%" align="center" />
