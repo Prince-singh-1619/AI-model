@@ -33,12 +33,13 @@ I reviewed several existing AI UIs to identify their strengths:
 ## 2. Design
 
 ### a. Mockup (Figma)  [View Design](https://www.figma.com/design/TjBF4c9cqx61hB2Zgl7cFG/UI-Mockup?node-id=0-1&p=f)
-Figma Link: https://www.figma.com/design/TjBF4c9cqx61hB2Zgl7cFG/UI-Mockup?node-id=0-1&p=f
 
 A mockup was created in **Figma** to outline:
 - Left side: Chat interface (conversation flow).
 - Right side: Sidebar with theme toggle, parameters, and templates.
 - Bottom: Input box with send button.
+
+Figma Link: https://www.figma.com/design/TjBF4c9cqx61hB2Zgl7cFG/UI-Mockup?node-id=0-1&p=f
 
 ### b. Tailwind Tokens
 - **Spacing** → Used `p-2`, `p-4`, `gap-2`, `gap-4` for consistent padding & margins.  
