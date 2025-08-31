@@ -100,3 +100,4 @@ A mockup was created in **Figma** to outline:
 
   <img src="./src/assets/SS 1.png" alt="1" width="100%" align="center" />
   <img src="./src/assets/SS 2.png" alt="2" width="100%" align="center" />
+  <img src="./src/assets/SS 3.png" alt="2" width="100%" align="center" />
