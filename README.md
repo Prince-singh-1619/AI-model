@@ -32,7 +32,7 @@ I reviewed several existing AI UIs to identify their strengths:
 
 ## 2. Design
 
-### a. Mockup (Figma)  [View Design](https://www.figma.com/design/kr7OQZXmGBARPfPRDSJU8a/AI-UI-Mockup?node-id=0-1&t=MPmoM2Gj8LUj6QW2-1)
+### a. Mockup (Figma)  [View Design](https://www.figma.com/design/TjBF4c9cqx61hB2Zgl7cFG/UI-Mockup?node-id=0-1&p=f)
 A mockup was created in **Figma** to outline:
 - Left side: Chat interface (conversation flow).
 - Right side: Sidebar with theme toggle, parameters, and templates.
@@ -80,3 +80,23 @@ A mockup was created in **Figma** to outline:
 
   <img src="./src/assets/SS 1.png" alt="1" width="100%" align="center" />
   <img src="./src/assets/SS 2.png" alt="2" width="100%" align="center" />
+
+--- 
+
+## 6. Implementation Notes & Known Limitations
+
+### a. Implementation Notes
+- Built with React, TypeScript, TailwindCSS, and Vite for modular, fast development.
+- State managed via `useState` and custom events for AI parameter updates and model selection.
+- Chat interface includes animated messages, typing indicator, and auto-scroll.
+- Components like `ChatBubble`, `Button`, `Slider`, and `Modal` are reusable and accessible (ARIA labels included).
+- Prompt templates persist in LocalStorage; assistant responses can be copied or downloaded as JSON.
+- Supports light/dark themes with dynamic toggling.
+
+### a. Known Limitations
+- Assistant responses are mocked; API integration needed for real AI.
+- LocalStorage is device-specific; no cross-device sync.
+- Minor performance issues may occur on low-end devices.
+- Storybook covers core components; minor UI elements are not included.
+- GitHub Pages deployment uses a fixed base path (`/AI-model/`).
+- No authentication; single-user prototype only.

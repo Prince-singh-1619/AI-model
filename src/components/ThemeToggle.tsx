@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
-// Define allowed theme values
 type Theme = "dark" | "light";
 
 const ThemeToggle: React.FC = () => {

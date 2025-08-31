@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Loader2, AlertCircle } from "lucide-react";
+import { Slider } from "./Slider";
 
 type Parameters = {
   temperature: number;
@@ -25,7 +26,7 @@ const ParameterControls: React.FC = () => {
       const newParams = { ...params, [key]: value };
       setParams(newParams);
 
-      // Broadcast params to other components
+      // Pass params to other components
       window.dispatchEvent(
         new CustomEvent("paramsChanged", { detail: newParams })
       );
@@ -74,22 +75,14 @@ const ParameterControls: React.FC = () => {
             )}
           </span>
         </label>
-        <input
+        <Slider
           id="temperature-slider"
-          type="range"
           min={0}
           max={1}
           step={0.01}
           value={params.temperature}
-          onChange={(e) =>
-            handleChange("temperature", parseFloat(e.target.value))
-          }
-          className="w-full"
-          aria-label="Adjust temperature"
-          aria-valuemin={0}
-          aria-valuemax={1}
-          aria-valuenow={params.temperature}
-          aria-describedby="temperature-desc"
+          onChange={(value) => handleChange("temperature", value)}
+          ariaLabel="Adjust temperature"
         />
         <p id="temperature-desc" className="text-xs text-gray-500">
           Controls randomness (0 = deterministic, 1 = creative).
@@ -115,15 +108,15 @@ const ParameterControls: React.FC = () => {
             )}
           </span>
         </label>
-        <input
+        <Slider
           id="maxTokens-slider"
-          type="range"
+          // type="range"
           min={50}
           max={4000}
           step={50}
           value={params.maxTokens}
-          onChange={(e) => handleChange("maxTokens", parseInt(e.target.value))}
-          className="w-full"
+          onChange={(value) => handleChange("maxTokens", value)}
+          // className="w-full"
           aria-label="Adjust maximum tokens"
           aria-valuemin={50}
           aria-valuemax={4000}
@@ -154,15 +147,15 @@ const ParameterControls: React.FC = () => {
             )}
           </span>
         </label>
-        <input
+        <Slider
           id="topP-slider"
-          type="range"
+          // type="range"
           min={0}
           max={1}
           step={0.01}
           value={params.topP}
-          onChange={(e) => handleChange("topP", parseFloat(e.target.value))}
-          className="w-full"
+          onChange={(value) => handleChange("topP", value)}
+          // className="w-full"
           aria-label="Adjust top-p sampling"
           aria-valuemin={0}
           aria-valuemax={1}
@@ -176,6 +169,12 @@ const ParameterControls: React.FC = () => {
       </div>
     </div>
   );
+};
+
+export type AIParameters = {
+  temperature: number;
+  maxTokens: number;
+  topP: number;
 };
 
 export default ParameterControls;
