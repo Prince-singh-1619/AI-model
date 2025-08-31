@@ -33,6 +33,8 @@ I reviewed several existing AI UIs to identify their strengths:
 ## 2. Design
 
 ### a. Mockup (Figma)  [View Design](https://www.figma.com/design/TjBF4c9cqx61hB2Zgl7cFG/UI-Mockup?node-id=0-1&p=f)
+Figma Link: https://www.figma.com/design/TjBF4c9cqx61hB2Zgl7cFG/UI-Mockup?node-id=0-1&p=f
+
 A mockup was created in **Figma** to outline:
 - Left side: Chat interface (conversation flow).
 - Right side: Sidebar with theme toggle, parameters, and templates.
@@ -86,7 +88,7 @@ A mockup was created in **Figma** to outline:
 - Prompt templates persist in LocalStorage; assistant responses can be copied or downloaded as JSON.
 - Supports light/dark themes with dynamic toggling.
 
-### a. Known Limitations
+### b. Known Limitations
 - Assistant responses are mocked; API integration needed for real AI.
 - LocalStorage is device-specific; no cross-device sync.
 - Minor performance issues may occur on low-end devices.
