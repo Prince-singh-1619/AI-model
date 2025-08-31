@@ -1,7 +1,6 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/components/ui/dialog"; // adjust import if using shadcn
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { Button } from "../components/Button";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@radix-ui/react-dialog";
 
 const DemoModal = () => {
   return (

@@ -76,13 +76,6 @@ A mockup was created in **Figma** to outline:
 
 ---
 
-## 5. Screenshots
-
-  <img src="./src/assets/SS 1.png" alt="1" width="100%" align="center" />
-  <img src="./src/assets/SS 2.png" alt="2" width="100%" align="center" />
-
---- 
-
 ## 6. Implementation Notes & Known Limitations
 
 ### a. Implementation Notes
@@ -100,3 +93,10 @@ A mockup was created in **Figma** to outline:
 - Storybook covers core components; minor UI elements are not included.
 - GitHub Pages deployment uses a fixed base path (`/AI-model/`).
 - No authentication; single-user prototype only.
+
+--- 
+
+## 5. Screenshots
+
+  <img src="./src/assets/SS 1.png" alt="1" width="100%" align="center" />
+  <img src="./src/assets/SS 2.png" alt="2" width="100%" align="center" />
